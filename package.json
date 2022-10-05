@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "8.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iva416/IvasReadmeGenerator.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Iva416/IvasReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/Iva416/IvasReadmeGenerator#readme"
 }
