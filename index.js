@@ -18,7 +18,12 @@ const renderTemplate = ({ title, description, installation, contribution, usage,
  return `
   ## Table of Contents
   1. [Title](#Title)
-
+  2. [License](#License)
+  3. [Description](#Descriptiom)
+  4. [Installation](#Installation)
+  5. [Contribution](#Contribution)
+  6. [Usage](#Usage)
+  7. [Input](#Input)
   ## Title: 
 
   - ${title}
@@ -26,6 +31,8 @@ const renderTemplate = ({ title, description, installation, contribution, usage,
   ## License
 
   - ${renderLicenseBadge(license, "Iva")}
+  
+  ## 
   `;
 }
 
@@ -44,7 +51,7 @@ function GenerateReadMe(){
 },
     { type: 'input',
     message: 'What are the installation instructions for your project?',
-    name: 'installtion',
+    name: 'installation',
 },
     { type: 'input',
     message: 'Contribution guidelines for your project?',
