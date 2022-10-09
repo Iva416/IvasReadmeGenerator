@@ -16,6 +16,7 @@ return licensestring;
 const renderTemplate = ({ title, description, installation, contribution, usage, test, license }) => {
  //let licensebadge = await renderLicenseBadge(license, "Iva")
  return `
+ 
   ## Table of Contents
   1. [Title](#Title)
   2. [License](#License)
@@ -23,16 +24,34 @@ const renderTemplate = ({ title, description, installation, contribution, usage,
   4. [Installation](#Installation)
   5. [Contribution](#Contribution)
   6. [Usage](#Usage)
-  7. [Input](#Input)
+  7. [Test](#Test)
   ## Title: 
 
   - ${title}
 
   ## License
 
-  - ${renderLicenseBadge(license, "Iva")}
+  - ${renderLicenseBadge(license)}
   
-  ## 
+  ## Description
+
+  - ${description}
+
+  ## Installation
+
+  - ${installation}
+
+  ## Contribution
+
+  - ${contribution}
+
+  ## Usage
+
+  - ${usage}
+
+  ## Test
+  - ${test}
+
   `;
 }
 
